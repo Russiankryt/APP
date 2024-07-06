@@ -75,9 +75,20 @@ if __name__ == '__main__':
 
 from time import sleep
 from sqlalchemy import create_engine, Table, Column, Integer, String, MetaData
+#Те же регионы, что и ранее
+regions = {
+    "Москва": 1,
+    "Санкт-Петербург": 2,
+    "Новосибирск": 4,
+    "Екатеринбург": 3,
+    "Нижний Новгород": 66,
+    "Казань": 88,
+    "Челябинск": 56,
+    "Ростов-на-Дону": 76,
+    "Уфа": 99,
+    "Волгоград": 38
+}
 
-# РЕГИОНЫ
-regions = {...}  # те же регионы, что и ранее
 
 DB_URL = "postgresql://user:password@db:5432/vacancies_db"
 
